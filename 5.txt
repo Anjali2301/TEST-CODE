@@ -1,0 +1,32 @@
+A useful method for working with data on the web is web scraping, also known as web crawling, web spidering, or "programmatically traversing over a collection of web pages and retrieving data."
+
+We can use a web scraper to gather information on a group of products, obtain a sizable corpus of textual or numerical data to experiment with, obtain information from a website devoid of an official API, or simply indulge your own personal interest.
+
+This lets us explore a fun data collection while learning the basics of the scraping and spidering process.
+We'll make use of BrickSet, a community-run website that provides details about LEGO sets.
+
+Finally, we have a completely functional Python web scraper that browses through a number of Brickset pages, extracts information about LEGO sets from each page, and displays the information on your screen.
+
+The scraper will be simple to grow, allowing you to tamper with it and use it as a basis for your own projects that extract data from the internet.
+
+Step 1:- Making a Simple Scraper
+Scraping involves two steps:
+
+You locate and download online pages methodically.
+These online pages can be used to gather information.
+Both of those actions can be carried out in a variety of ways and in numerous languages.
+
+Step 2:-  Extracting Data from a Page
+A very simple programme that pulls down a page has been developed, but it doesn't yet scrape or spider the web. Give it some information to extract.
+
+You can see the structure of the page we want to scrape by looking at it:
+
+Every page has a header that is visible.
+There are certain top-level search statistics, such as the amount of results, the terms we're using, and the site's breadcrumbs.
+The sets themselves are then shown in what appears to be a table or an ordered list. The format is the same for every set.
+It's a good idea to look at the HTML file's source and become familiar with its structure before beginning to write a scraper.
+
+Step 3:-  Crawling Multiple Pages
+
+Although we were able to effectively extract data from the first page, we didn't move on to the rest of the results.
+A spider's main purpose is to find and follow links to other pages in order to collect data from those pages as well.
